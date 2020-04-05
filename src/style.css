@@ -1,0 +1,196 @@
+/** Add any CSS you need to this file. */
+body {
+    margin: 0;
+    background: rgb(229, 130, 163);
+    background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, black 1px, transparent 1px),
+    linear-gradient(to bottom, black 1px, transparent 1px);
+    background-attachment: fixed;
+}
+h5{
+    color: white;
+    background: black;
+    box-shadow:4px 4px fuchsia;
+    border-radius: .2em;
+}
+h6{
+    color: red;
+    font-weight: bolder;
+}
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+header {
+    position: auto;
+    background: black;
+    color: turquoise; 
+    text-shadow: 2px 2px #FF0000;
+    font-family: 'Monoton', cursive;
+    font-weight: bolder;
+    font-size: 2em;
+    z-index: 1;
+}
+.sidebar h1{
+    margin: 0; 
+    display: inline;
+    border: 1%;
+}
+nav img{
+    height: 1.5em;
+    width: 1.5em;
+}
+nav ul{
+    margin: 0;
+    padding: 0 0 0 10%;
+    display: inline;
+}
+nav ul li {
+    position: relative;
+    background: turquoise; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px red;
+    display: inline-block; 
+    border-style: double;
+    border-color: black;
+    list-style-type: none; 
+    padding: 0.5% 0.5%;
+}
+a:hover{ 
+    color: purple;
+}
+nav ul li a {
+    color:black;
+    border-style: none;
+    text-decoration: none;
+}
+nav ul .styles_list #styles_masc, nav ul .styles_list #styles_fem, nav ul .styles_list #styles_access {
+    background-color: greenyellow;
+    display: block;
+}
+.styles_list{
+    display: block;
+    background: indigo;
+    visibility: hidden;
+    position: absolute;
+    padding: none;
+    z-index: 1;
+}
+nav ul li:hover ul{
+    visibility: visible;
+    display: block;
+}
+nav ul li ul a:hover{
+    background-color: indigo;
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    border-style: double;
+    text-align: center;
+    background: greenyellow;
+    display: block;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: auto;
+    background: turquoise;
+    box-shadow: .5em .2em rgb(99, 29, 99);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-radius: 5px;
+    padding: none;
+    float: left;
+    margin: 1%;
+    width: 18rem;
+} 
+.col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+form ul {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background: black;
+    color: turquoise;
+    padding: 0 10% 0 10%;
+    border-style: groove;
+    list-style-type: none;
+    font-size: 1em;
+}
+footer{
+    clear: both;
+    color: turquoise;
+    text-shadow: .2em .2em indigo;
+    background: black;
+    box-shadow: .5em .2em rgb(99, 29, 99);
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+/* generic search bar */
+
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  /* Style the search field */
+  form.search input[type=text] {
+    font-size: .5em;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    width: 20%;
+    background: white;
+    padding: 0.5% 0.5%;
+  }
+  
+  /* Style the submit button */
+  form.search button {
+    position: relative;
+    float: left;
+    width: 5%;
+    padding: .5em;
+    background: indigo;
+    color: white;
+    font-size: 1.4em;
+    cursor: pointer;
+    
+  }
+  
+  form.search button:hover {
+    background: red;
+  }
+  
+  /* Clear floats */
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* forms */
+
+.subscribe {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+
+.disclaimer {
+    font-weight: .1em;
+}
+
+.insta{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    height: 50%
+}
